@@ -8,7 +8,7 @@ on:
 
 jobs:
   destroy:
-    if: inputs.confirm == 'destroy'
+    if: ${{ github.event.inputs.confirm == 'destroy' }}
     runs-on: ubuntu-latest
     environment: production
     permissions: { id-token: write, contents: read }
