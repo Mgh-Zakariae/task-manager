@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tasks-app
-          image: mghzakariae/k8s_proj:v1.0.2
+          image: mghzakariae/task-manager:v1.0.0
           ports:
           - containerPort: 5000
           envFrom:
