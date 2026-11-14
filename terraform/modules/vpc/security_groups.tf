@@ -27,8 +27,6 @@ resource "aws_vpc_security_group_egress_rule" "outbound_app" {
   security_group_id = aws_security_group.webApp_vpc_sg.id
   ip_protocol       = "-1"
   cidr_ipv4         = "0.0.0.0/0"
-  from_port         = 0
-  to_port           = 0
 }
 
 # Redis 
